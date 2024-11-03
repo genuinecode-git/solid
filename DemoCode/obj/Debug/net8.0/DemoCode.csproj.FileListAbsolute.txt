@@ -1,0 +1,15 @@
+/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/obj/Debug/net8.0/DemoCode.GeneratedMSBuildEditorConfig.editorconfig
+/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/obj/Debug/net8.0/DemoCode.AssemblyInfoInputs.cache
+/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/obj/Debug/net8.0/DemoCode.AssemblyInfo.cs
+/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/obj/Debug/net8.0/DemoCode.csproj.CoreCompileInputs.cache
+/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/obj/Debug/net8.0/DemoCode.sourcelink.json
+/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/bin/Debug/net8.0/DemoCode
+/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/bin/Debug/net8.0/DemoCode.deps.json
+/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/bin/Debug/net8.0/DemoCode.runtimeconfig.json
+/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/bin/Debug/net8.0/DemoCode.dll
+/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/bin/Debug/net8.0/DemoCode.pdb
+/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/obj/Debug/net8.0/DemoCode.dll
+/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/obj/Debug/net8.0/refint/DemoCode.dll
+/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/obj/Debug/net8.0/DemoCode.pdb
+/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/obj/Debug/net8.0/DemoCode.genruntimeconfig.cache
+/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/obj/Debug/net8.0/ref/DemoCode.dll

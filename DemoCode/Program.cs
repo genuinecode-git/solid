@@ -4,7 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Shop shop = new Shop();
+        shop.Run();
     }
 }
 

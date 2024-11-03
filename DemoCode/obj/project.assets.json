@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/prabathsl/Sessions/Solid/DemoCode/DemoCode/DemoCode.csproj",
+      "projectUniqueName": "/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/DemoCode.csproj",
       "projectName": "DemoCode",
-      "projectPath": "/Users/prabathsl/Sessions/Solid/DemoCode/DemoCode/DemoCode.csproj",
+      "projectPath": "/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/DemoCode.csproj",
       "packagesPath": "/Users/prabathsl/.nuget/packages/",
-      "outputPath": "/Users/prabathsl/Sessions/Solid/DemoCode/DemoCode/obj/",
+      "outputPath": "/Users/prabathsl/Sessions/Solid/Code/solid/DemoCode/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/prabathsl/.nuget/NuGet/NuGet.Config"
