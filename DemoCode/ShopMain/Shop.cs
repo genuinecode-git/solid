@@ -1,3 +1,4 @@
+
 namespace DemoCode.ShopMain
 {
 
@@ -97,7 +98,7 @@ namespace DemoCode.ShopMain
                     _salesManager.SetDiscountStrategy(new HolidayDiscount(5)); // e.g., $5 discount
                     break;
                 case "3":
-                    _salesManager.SetDiscountStrategy(null); // No discount
+                    _salesManager.SetDiscountStrategy(new NoDiscount()); // No discount
                     break;
                 default:
                     Console.WriteLine("Invalid option.");
