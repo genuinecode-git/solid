@@ -1,31 +1,23 @@
 namespace DemoCode.Models.Design
 {
     // Handles sales operations such as selling products
-    public class SalesManager
+    public class SalesManager : ISales
     {
-        private Inventory inventory;
-        private IDiscount discountStrategy;
+        private IProductInventory _inventory;
 
-        public SalesManager(Inventory inventory)
+        public SalesManager(IProductInventory inventory)
         {
-            this.inventory = inventory;
+            _inventory = inventory;
         }
 
-        // Set the discount strategy to use for a sale
-        public void SetDiscountStrategy(IDiscount discount)
+        public void SellProduct(int productId, int quantity, IDiscount discountStrategy)
         {
-            this.discountStrategy = discount;
-        }
-
-        public void SellProduct(int productId, int quantity)
-        {
-            Product product = inventory.FindProductById(productId);
+            Product product = _inventory.FindProductById(productId);
             if (product != null && product.Stock >= quantity)
             {
                 product.Stock -= quantity;
                 decimal totalAmount = product.Price * quantity;
 
-                // Apply discount if any
                 if (discountStrategy != null)
                 {
                     totalAmount = discountStrategy.ApplyDiscount(totalAmount);

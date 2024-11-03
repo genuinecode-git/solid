@@ -2,17 +2,20 @@ namespace DemoCode.Models.Design
 {
     public class CustomerService
     {
-        private Inventory _inventory;
+        private IProductInventory _inventory;
 
-        public CustomerService(Inventory inventory)
+        public CustomerService(IProductInventory inventory)
         {
-            this._inventory = inventory;
+            _inventory = inventory;
         }
 
         public void ShowAvailableProducts()
         {
             Console.WriteLine("\nAvailable Products:");
-            _inventory.DisplayProducts();
+            foreach (var product in _inventory.GetAllProducts())
+            {
+                product.DisplayInfo();
+            }
         }
     }
 }

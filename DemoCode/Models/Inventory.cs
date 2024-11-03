@@ -1,22 +1,22 @@
-namespace DemoCode.Models {
-
+namespace DemoCode.Models
+{
     // Manages inventory operations like adding, removing, and displaying products
-    public class Inventory
+    public class Inventory : IProductInventory
     {
-        private List<Product> _products = [];
+        private List<Product> _products = new List<Product>();
 
         public void AddProduct(Product product)
         {
-            this._products.Add(product);
+            _products.Add(product);
             Console.WriteLine("Product added successfully.");
         }
 
         public void RemoveProduct(int id)
         {
-            var product = this._products.Find(p => p.Id == id);
+            var product = _products.Find(p => p.Id == id);
             if (product != null)
             {
-                this._products.Remove(product);
+                _products.Remove(product);
                 Console.WriteLine("Product removed successfully.");
             }
             else
@@ -27,16 +27,12 @@ namespace DemoCode.Models {
 
         public Product FindProductById(int id)
         {
-            return this._products.Find(p => p.Id == id);
+            return _products.Find(p => p.Id == id);
         }
 
-        public void DisplayProducts()
+        public List<Product> GetAllProducts()
         {
-            Console.WriteLine("\nCurrent Inventory:");
-            foreach (var product in this._products)
-            {
-                product.DisplayInfo();
-            }
+            return _products;
         }
     }
 }
