@@ -1,16 +1,19 @@
+
 namespace DemoCode.ShopMain
 {
     // Runs the main menu and coordinates between Inventory, Sales, and Customer Service
     public class Shop
     {
-        private IProductInventory _inventory = new Inventory();
+        private IProductInventory _inventory;
         private ISales _salesManager;
         private CustomerService _customerService;
 
-        public Shop()
+        // Constructor injection for dependencies
+        public Shop(IProductInventory inventory, ISales salesManager, CustomerService customerService)
         {
-            _salesManager = new SalesManager(_inventory);
-            _customerService = new CustomerService(_inventory);
+            _inventory = inventory;
+            _salesManager = salesManager;
+            _customerService = customerService;
         }
 
         public void Run()
@@ -65,12 +68,14 @@ namespace DemoCode.ShopMain
             Product product = new Product(id, name, price, stock);
             _inventory.AddProduct(product);
         }
- private void RemoveProduct()
+
+        private void RemoveProduct()
         {
             Console.Write("Enter product ID to remove: ");
             int id = int.Parse(Console.ReadLine());
             _inventory.RemoveProduct(id);
         }
+
         private void SellProductWithDiscount()
         {
             Console.Write("Enter product ID to sell: ");
