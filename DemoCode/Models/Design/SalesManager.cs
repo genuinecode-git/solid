@@ -1,27 +1,43 @@
-namespace DemoCode.Models.Design;
-
-// Handles sales operations such as selling products
-public class SalesManager
+namespace DemoCode.Models.Design
 {
-    private Inventory inventory;
-
-    public SalesManager(Inventory inventory)
+    // Handles sales operations such as selling products
+    public class SalesManager
     {
-        this.inventory = inventory;
-    }
+        private Inventory inventory;
+        private IDiscount discountStrategy;
 
-    public void SellProduct(int productId, int quantity)
-    {
-        Product product = inventory.FindProductById(productId);
-        if (product != null && product.Stock >= quantity)
+        public SalesManager(Inventory inventory)
         {
-            product.Stock -= quantity;
-            Console.WriteLine($"Sold {quantity} units of {product.Name}.");
-            Console.WriteLine($"Total Sale: ${product.Price * quantity}\n");
+            this.inventory = inventory;
         }
-        else
+
+        // Set the discount strategy to use for a sale
+        public void SetDiscountStrategy(IDiscount discount)
         {
-            Console.WriteLine("Product not found or insufficient stock.");
+            this.discountStrategy = discount;
+        }
+
+        public void SellProduct(int productId, int quantity)
+        {
+            Product product = inventory.FindProductById(productId);
+            if (product != null && product.Stock >= quantity)
+            {
+                product.Stock -= quantity;
+                decimal totalAmount = product.Price * quantity;
+
+                // Apply discount if any
+                if (discountStrategy != null)
+                {
+                    totalAmount = discountStrategy.ApplyDiscount(totalAmount);
+                }
+
+                Console.WriteLine($"Sold {quantity} units of {product.Name}.");
+                Console.WriteLine($"Total Sale after Discount: ${totalAmount}\n");
+            }
+            else
+            {
+                Console.WriteLine("Product not found or insufficient stock.");
+            }
         }
     }
 }
