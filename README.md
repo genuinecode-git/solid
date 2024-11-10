@@ -7,13 +7,13 @@
  2. [optional] Install visual studio community edition ([Link](https://visualstudio.microsoft.com/vs/community/)) or visual studio code ([link](https://code.visualstudio.com))
  3. clone the repository to your computer 
  4. Open the folder in vscode / or open solution in visual studio (DemoCode.sln)
- 5. Run 
-	 a. In Visual studio
-	     i. Set "DemoCode.csproj' as default project and run
-	b. In vscode 
-	     i. Open Terminal 
-	     ii. Navigate to project folder (DemoCode)
-	     iii. use following command to run - ( dotnet run )   
+ 5. Run <br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a. In Visual studio<br />
+	     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. Set "DemoCode.csproj' as default project and run<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. In vscode <br />
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i. Open Terminal <br />
+	     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii. Navigate to project folder (DemoCode)<br />
+	     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii. use following command to run - ( dotnet run ) <br />  
 
  In successful run you will be able to see below 
 
