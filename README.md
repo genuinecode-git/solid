@@ -30,11 +30,11 @@ setup and run dotnet CLI Commands ([Link](https://learn.microsoft.com/en-us/dotn
 
 ## Branches
 
-`SingleResponsibility` - contains demo code which related with **S**ingle **R**esponsibility **P**rinciple .
-`OCP` - Contains demo code related with **O**pen/**C**lose **P**rinciple.
-`Liskov` - Contains demo code related with **L**iskov **S**ubstitution **P**rinciple
-`IntrefaceSeggragation` - Contains demo code related with **I**nterface **S**egregation **P**rinciple
-`DI` - Contains demo code related with **D**ependency **I**nversion **P**rinciple
+`SingleResponsibility` - contains demo code which related with **S**ingle **R**esponsibility **P**rinciple .<br />
+`OCP` - Contains demo code related with **O**pen/**C**lose **P**rinciple.<br />
+`Liskov` - Contains demo code related with **L**iskov **S**ubstitution **P**rinciple.<br />
+`IntrefaceSeggragation` - Contains demo code related with **I**nterface **S**egregation **P**rinciple.<br />
+`DI` - Contains demo code related with **D**ependency **I**nversion **P**rinciple.<br />
 
 ## Linked Resources (for further read)
 
